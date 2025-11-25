@@ -1,0 +1,17 @@
+product/custom/3rd-party/apk/CamScanner/CamScanner.apk.xz
+product/priv-app/GmsCore/GmsCore.apk.xz
+system_ext/priv-app/SystemUI/SystemUI.apk.xz
+product/app/TrichromeLibrary64/TrichromeLibrary64.apk.xz
+system/system/MzApp/Video/Video.apk.xz
+system_ext/priv-app/Settings/Settings.apk.xz
+system/system/MzApp/mzbbs/mzbbs.apk.xz
+system/system/MzApp/FlymeMusic/FlymeMusic.apk.xz
+system/system/MzApp/VoiceAssistant/VoiceAssistant.apk.xz
+system/system/MzApp/Scanner/Scanner.apk.xz
+system/system/priv-app/FlymeGallery/FlymeGallery.apk.xz
+system/system/app/SogouInputMz/SogouInputMz.apk.xz
+system/system/priv-app/AlphaMe/AlphaMe.apk.xz
+recovery.img.xz
+vendor/lib64/libface-sensetime.so.xz
+system/system/priv-app/Browser/Browser.apk.xz
+vendor/lib64/libarcsoft_turbo_hdr_raw.so.xz
