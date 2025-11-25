@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="com.meizu.suggestion">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.LOCAL_MAC_ADDRESS" />
+        <permission name="flyme.permission.ROOT_RECOVERY_STATE" />
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM" />
+        <permission name="android.permission.BATTERY_STATS" />
+        <permission name="flyme.permission.AI_AGENT_ACCESS"/>
+    </privapp-permissions>
+</permissions>

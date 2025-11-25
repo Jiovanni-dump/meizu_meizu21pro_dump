@@ -1,0 +1,6 @@
+service mzkv_server /system/bin/mzkv_server
+    socket mzkv_sock stream 0666 system system
+    class core
+    user root
+    group root system
+    stdio_to_kmsg

@@ -1,0 +1,7 @@
+#FLYME|Core-Framework|liangdong@meizu.com|LogReport feature for tool of ap&cp log {@
+service logreportd /system/bin/logreportd
+ user root
+ group system oem_2901 sdcard_rw sdcard_r media_rw everybody misc readproc bluetooth wifi
+ socket logreportd stream 666 system system
+ #disabled
+ #oneshot

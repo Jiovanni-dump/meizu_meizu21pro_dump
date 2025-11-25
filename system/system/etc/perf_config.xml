@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs version="20230912">
+    <config name="app_base">
+        <!--
+        <scene name="cold_launch" >
+        </scene>
+        <scene name="foreground" >
+        </scene>
+        <scene name="scroll">
+        </scene>
+        -->
+    </config>
+
+    <!-- App Boost Start -->
+    <config name="com.ss.android.ugc.aweme" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000, 2572, 0x40804200, 2246,
+                0x41440100,0x5F,0x4143C100,1497,0x4143C000,1612,0x4143C200,1478,
+                0x41000000,0,0x41444000,0,0x41444200,0</perflock>
+            <!--
+            <volume>0.85</volume>
+            -->
+        </scene>
+    </config>
+    <config name="com.ss.android.ugc.aweme.lite" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000, 2572, 0x40804200, 2246,
+                0x41440100,0x5F,0x4143C100,1497,0x4143C000,1612,0x4143C200,1478,
+                0x41000000,0,0x41444000,0,0x41444200,0</perflock>
+            <!--
+            <volume>0.85</volume>
+            -->
+        </scene>
+    </config>
+    <config name="com.ss.android.article.news" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x41440100,0x5F,0x40804000,2188,0x40804300,2188,0x40804100,1497,0x40804200,1478,
+                0x41000000,0,0x41444000,0,0x41444200,0,0x40C1C000,0x14,
+                0x40C1C200,0x63,0x40C20000,0x0A,0x40C20200,0x5F</perflock>
+        </scene>
+    </config>
+    <config name="com.hexin.plat.android" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000,2188, 0x40804300,1190, 0x40804100,902,0x40804200,1248, 0x42804000,10,0x42808000,7,
+                0x40C9C000,4, 0x41444000,0, 0x41444200,0,0x40CE0000, 0x0014000A, 0x40CE0200, 0x005A0050</perflock>
+        </scene>
+    </config>
+    <config name="cn.xuexi.android" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000,2188, 0x40804300,1190, 0x40804100,902,0x40804200,1248, 0x42804000,10,0x42808000,7,
+                0x40C9C000,4, 0x41444000,0, 0x41444200,0,0x40CE0000, 0x0014000A, 0x40CE0200, 0x005A0050</perflock>
+        </scene>
+    </config>
+    <config name="com.tencent.wemeet.app" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000,1190, 0x40804300,1190, 0x40804100,902,0x40804200,1248</perflock>
+        </scene>
+    </config>
+    <config name="cn.wps.moffice_eng" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x41440100,0x5F,0x40804000,2188, 0x40804300,2188, 0x40804100,1497,0x40804200,1478,
+                0x41000000,0,0x41444000,0,0x41444200,0,0x40C1C000,0x14,
+                0x40C1C200,0x63,0x40C20000,0x0A,0x40C20200,0x5F</perflock>
+        </scene>
+    </config>
+    <config name="com.smile.gifmaker" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000, 2572, 0x40804300,1190, 0x40804200, 2246,
+                0x41440100,0x5F,0x4143C100,1497,0x4143C000,1612,0x4143C200,1478,
+                0x41000000,0,0x41444000,0,0x41444200,0</perflock>
+        </scene>
+    </config>
+    <config name="com.kuaishou.nebula" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000, 2572, 0x40804300,1190, 0x40804200, 2246,
+                0x41440100,0x5F,0x4143C100,1497,0x4143C000,1612,0x4143C200,1478,
+                0x41000000,0,0x41444000,0,0x41444200,0</perflock>
+        </scene>
+    </config>
+    <config name="com.tencent.qqlive" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000,2188,0x40804300,2323,0x40804100,902,0x40804200,1708, 0x42808000,7,
+                0x40C9C000,4, 0x41444000,0, 0x41444200,0,0x40CE0000, 0x0014000A, 0x40CE0300, 0x0014000A, 0x40CE0200, 0x005A0050</perflock>
+        </scene>
+        <!--
+        <scene name="scroll">
+            <perflock>0x40C00000, 0x2, 0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0,
+                0x4080C000, 1000000, 0x4080C200, 1000000, 0x4080C300, 1000000,
+                0x40808000, 600000, 0x40808200, 800000, 0x40808300, 600000,
+                0x4303C000, 0xA6428, 0x43458000, 0xD2F00, 0x40C74000, 0xFF,
+                0x40408000, 0x63</perflock>
+            <perflock ex_tgpa_fps="90">
+                0x40C00000, 0x2, 0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0,
+                0x4080C000, 1000000, 0x4080C200, 1000000, 0x4080C300, 1000000,
+                0x40808000, 600000, 0x40808200, 800000, 0x40808300, 600000,
+                0x41000200, 1, 0x4303C000, 0xA6428, 0x43458000, 0xD2F00, 0x40C74000,
+                0xFF, 0x40408000, 0x63, 0x40CE0200, 0x0023000A</perflock>
+            <perflock ex_tgpa_fps="120,144">
+                0x40C00000, 0x2, 0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0,
+                0x4080C000, 1300000, 0x4080C200, 1300000, 0x4080C300, 1300000,
+                0x40808000, 600000, 0x40808200, 800000, 0x40808300, 600000,
+                0x41000200, 1, 0x4303C000, 0xA6428, 0x43458000, 0x114900,
+                0x40C74000, 0xFF, 0x40408000, 0x63, 0x40CE0200, 0x0023000A, 0x41010000, 0</perflock>
+        </scene>
+        -->
+    </config>
+    <config name="com.qiyi.video" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x41440100,0x5F,0x4143C100,1497,0x40804300,1190,0x4143C000,1612,0x4143C200,1478,
+                0x41000000,0,0x41444000,0,0x41444200,0,0x40C1C000,0x63,
+                0x40C1C200,0x63,0x40C20000,0x5A,0x40C20200,0x5A</perflock>
+        </scene>
+    </config>
+    <config name="com.UCMobile" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000,2438,0x40804100,0xFFF,0x40804200,2553, 0x40CE0000, 0x0014000A, 0x40CE0200, 0x00640062</perflock>
+        </scene>
+    </config>
+    <config name="com.xunlei.downloadprovider" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000,1708,0x40804100,1075,0x40804200,1248</perflock>
+        </scene>
+    </config>
+    <config name="com.jingdong.app.mall" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000,2572,0x40804300,1190, 0x40804100,902,0x40804200,1248, 0x42804000,10,0x42808000,7,
+                0x40C9C000,4, 0x41444000,0, 0x41444200,0,0x40CE0000, 0x0014000A, 0x40CE0200, 0x005A0050</perflock>
+        </scene>
+    </config>
+    <config name="com.taobao.taobao" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000,2572,0x40804100,902,0x40804200,672, 0x42804000,10,0x42808000,7,
+                0x40C9C000,4, 0x41444000,0, 0x41444200,0,0x40CE0000, 0x0014000A, 0x40CE0200, 0x005A0050</perflock>
+        </scene>
+        <!--
+        <scene name="scroll">
+            <perflock>0x40C00000, 0x2, 0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0,
+                0x4080C000, 1000000, 0x4080C200, 1000000, 0x4080C300, 1000000,
+                0x40808000, 600000, 0x40808200, 800000, 0x40808300, 600000,
+                0x4303C000, 0xA6428, 0x43458000, 0xD2F00, 0x40C74000, 0xFF,
+                0x40408000, 0x63</perflock>
+            <perflock ex_tgpa_fps="90">
+                0x40C00000, 0x2, 0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0,
+                0x4080C000, 1000000, 0x4080C200, 1000000, 0x4080C300, 1000000,
+                0x40808000, 600000, 0x40808200, 800000, 0x40808300, 600000,
+                0x41000200, 1, 0x4303C000, 0xA6428, 0x43458000, 0xD2F00, 0x40C74000,
+                0xFF, 0x40408000, 0x63, 0x40CE0200, 0x0023000A</perflock>
+            <perflock ex_tgpa_fps="120,144">
+                0x40C00000, 0x2, 0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0,
+                0x4080C000, 1300000, 0x4080C200, 1300000, 0x4080C300, 1300000,
+                0x40808000, 600000, 0x40808200, 800000, 0x40808300, 600000,
+                0x41000200, 1, 0x4303C000, 0xA6428, 0x43458000, 0x114900,
+                0x40C74000, 0xFF, 0x40408000, 0x63, 0x40CE0200, 0x0023000A, 0x41010000, 0</perflock>
+        </scene>
+        -->
+    </config>
+    <config name="com.tmall.wireless" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000,2572,0x40804100,902,0x40804200,672, 0x42804000,10,0x42808000,7,
+                0x40C9C000,4, 0x41444000,0, 0x41444200,0,0x40CE0000, 0x0014000A, 0x40CE0200, 0x005A0050</perflock>
+        </scene>
+    </config>
+    <config name="com.sina.weibo" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x42804000,10,0x42808000,7,0x40C9C000,4, 0x41444000,0, 0x41444200,0,
+                0x40CE0000, 0x0014000A, 0x40CE0200, 0x005A0050, 0x40C00000, 1</perflock>
+        </scene>
+        <!--
+        <scene name="scroll">
+            <perflock>0x40C00000, 0x2, 0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0,
+                0x4080C000, 1000000, 0x4080C200, 1000000, 0x4080C300, 1000000,
+                0x40808000, 600000, 0x40808200, 800000, 0x40808300, 600000,
+                0x4303C000, 0xA6428, 0x43458000, 0xD2F00, 0x40C74000, 0xFF,
+                0x40408000, 0x63</perflock>
+            <perflock ex_tgpa_fps="90">
+                0x40C00000, 0x2, 0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0,
+                0x4080C000, 1000000, 0x4080C200, 1000000, 0x4080C300, 1000000,
+                0x40808000, 600000, 0x40808200, 800000, 0x40808300, 600000,
+                0x41000200, 1, 0x4303C000, 0xA6428, 0x43458000, 0xD2F00, 0x40C74000,
+                0xFF, 0x40408000, 0x63, 0x40CE0200, 0x0023000A</perflock>
+            <perflock ex_tgpa_fps="120,144">
+                0x40C00000, 0x2, 0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0,
+                0x4080C000, 1300000, 0x4080C200, 1300000, 0x4080C300, 1300000,
+                0x40808000, 600000, 0x40808200, 800000, 0x40808300, 600000,
+                0x41000200, 1, 0x4303C000, 0xA6428, 0x43458000, 0x114900,
+                0x40C74000, 0xFF, 0x40408000, 0x63, 0x40CE0200, 0x0023000A, 0x41010000, 0</perflock>
+        </scene>
+        -->
+    </config>
+    <config name="com.xingin.xhs" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000,2188,0x40804300,2188,0x40804100,902,0x40804200,672, 0x42804000,10,0x42808000,7,
+                0x40C9C000,4, 0x41444000,0, 0x41444200,0,0x40CE0000, 0x0014000A, 0x40CE0200, 0x005A0050</perflock>
+        </scene>
+    </config>
+    <config name="com.dragon.read" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000,960,0x40804100,902,0x40804200,672, 0x42804000,10,0x42808000,7,
+                0x40C9C000,4, 0x41444000,0, 0x41444200,0,0x40CE0000, 0x0014000A, 0x40CE0200, 0x005A0050</perflock>
+        </scene>
+    </config>
+    <config name="com.xs.fm" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000,960,0x40804100,902,0x40804200,672, 0x42804000,10,0x42808000,7,
+                0x40C9C000,4, 0x41444000,0, 0x41444200,0,0x40CE0000, 0x0014000A, 0x40CE0200, 0x005A0050</perflock>
+        </scene>
+    </config>
+    <config name="tv.danmaku.bili" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000,2572,0x40804100,902,0x40804200,672, 0x42804000,10,0x42808000,7,
+                0x40C9C000,4, 0x41444000,0, 0x41444200,0,0x40CE0000, 0x0014000A, 0x40CE0200, 0x005A0050</perflock>
+            <!--
+            <brightness>0.8</brightness>
+            -->
+        </scene>
+    </config>
+    <config name="ctrip.android.view" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000,2572,0x40804100,902,0x40804200,672, 0x42804000,10,0x42808000,7,
+                0x40C9C000,4, 0x41444000,0, 0x41444200,0,0x40CE0000, 0x0014000A, 0x40CE0200, 0x005A0050</perflock>
+        </scene>
+    </config>
+    <config name="com.sankuai.meituan" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000,2572,0x40804100,902,0x40804200,672, 0x42804000,10,0x42808000,7,
+                0x40C9C000,4, 0x41444000,0, 0x41444200,0,0x40CE0000, 0x0014000A, 0x40CE0200, 0x005A0050</perflock>
+        </scene>
+    </config>
+    <config name="com.taobao.idlefish" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000,2572,0x40804100,902,0x40804200,672, 0x42804000,10,0x42808000,7,
+                0x40C9C000,4, 0x41444000,0, 0x41444200,0,0x40CE0000, 0x0014000A, 0x40CE0200, 0x005A0050</perflock>
+        </scene>
+    </config>
+    <config name="com.wuba" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000,2572,0x40804100,902,0x40804200,672, 0x42804000,10,0x42808000,7,
+                0x40C9C000,4, 0x41444000,0, 0x41444200,0,0x40CE0000, 0x0014000A, 0x40CE0200, 0x005A0050</perflock>
+        </scene>
+    </config>
+    <config name="com.shizhuang.duapp" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000,2572,0x40804100,902,0x40804200,672, 0x42804000,10,0x42808000,7,
+                0x40C9C000,4, 0x41444000,0, 0x41444200,0,0x40CE0000, 0x0014000A, 0x40CE0200, 0x005A0050</perflock>
+        </scene>
+    </config>
+    <config name="com.ss.android.lark" parent="app_base">
+        <scene name="foreground">
+            <perflock activity="com.ss.android.vc.meeting.module.multi.ByteRTCMeetingActivityInstance">
+                0x40804000,1190, 0x40804300,1190, 0x40804100,902,0x40804200,1248</perflock>
+            <perflock activity="com.ss.android.vc.meeting.module.preview.facade.MeetingPreviewActivity">
+                0x40804000,1190, 0x40804300,1190, 0x40804100,902,0x40804200,1248
+            </perflock>
+        </scene>
+    </config>
+    <config name="com.tencent.mm" parent="app_base">
+        <scene name="foreground">
+            <perflock activity="com.tencent.mm.plugin.voip.ui.VideoActivity">
+                0x40804000,1190, 0x40804300,1190, 0x40804100,902,0x40804200,1248</perflock>
+            <perflock activity="com.tencent.mm.plugin.multitalk.ui.MultiTalkMainUI">
+                0x40804000,1190, 0x40804300,1190, 0x40804100,902,0x40804200,1248
+            </perflock>
+            <perflock activity="com.tencent.mm.plugin.finder.ui.FinderHomeAffinityUI">
+                0x41440100,0x5F,0x40804000,1612,0x40804100,1497,0x40804200,1478,
+                0x41000000,0,0x41444000,0,0x41444200,0,0x40C1C000,0x14,
+                0x40C1C200,0x63,0x40C20000,0x0A,0x40C20200,0x5F</perflock>
+            <perflock activity="com.tencent.mm.plugin.finder.feed.ui.FinderLiveVisitorWithoutAffinityUI">
+                0x41440100,0x5F,0x40804000,1612,0x40804100,1497,0x40804200,1478,
+                0x41000000,0,0x41444000,0,0x41444200,0,0x40C1C000,0x14,
+                0x40C1C200,0x63,0x40C20000,0x0A,0x40C20200,0x5F
+            </perflock>
+        </scene>
+        <!--
+        <scene name="scroll">
+            <perflock>0x40C00000, 0x2, 0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0,
+                0x4080C000, 1000000, 0x4080C200, 1000000, 0x4080C300, 1000000,
+                0x40808000, 600000, 0x40808200, 800000, 0x40808300, 600000,
+                0x4303C000, 0xA6428, 0x43458000, 0xD2F00, 0x40C74000, 0xFF,
+                0x40408000, 0x63</perflock>
+            <perflock ex_tgpa_fps="90">
+                0x40C00000, 0x2, 0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0,
+                0x4080C000, 1000000, 0x4080C200, 1000000, 0x4080C300, 1000000,
+                0x40808000, 600000, 0x40808200, 800000, 0x40808300, 600000,
+                0x41000200, 1, 0x4303C000, 0xA6428, 0x43458000, 0xD2F00, 0x40C74000,
+                0xFF, 0x40408000, 0x63, 0x40CE0200, 0x0023000A</perflock>
+            <perflock ex_tgpa_fps="120,144">
+                0x40C00000, 0x2, 0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0,
+                0x4080C000, 1300000, 0x4080C200, 1300000, 0x4080C300, 1300000,
+                0x40808000, 600000, 0x40808200, 800000, 0x40808300, 600000,
+                0x41000200, 1, 0x4303C000, 0xA6428, 0x43458000, 0x114900,
+                0x40C74000, 0xFF, 0x40408000, 0x63, 0x40CE0200, 0x0023000A, 0x41010000, 0</perflock>
+        </scene>
+        -->
+    </config>
+    <!--
+    <config name="com.meizu.media.camera">
+        <scene name="foreground">
+            <brightness>0.8</brightness>
+        </scene>
+    </config>
+    -->
+
+    <!--
+    <config name="com.meizu.datamigration" parent="app_base">
+        <scene name="foreground">
+            <thermal>data_migration_thermal_conf</thermal>
+        </scene>
+    </config>
+    <config name="com.hema.spottransfer" parent="app_base">
+        <scene name="foreground">
+            <thermal>data_migration_thermal_conf</thermal>
+        </scene>
+    </config>
+    <config name="com.tencent.transfer" parent="app_base">
+        <scene name="foreground">
+            <thermal>data_migration_thermal_conf</thermal>
+        </scene>
+    </config>
+    <config name="com.qqwj.clonedata" parent="app_base">
+        <scene name="foreground">
+            <thermal>data_migration_thermal_conf</thermal>
+        </scene>
+    </config>
+    <config name="com.tencent.qqpim" parent="app_base">
+        <scene name="foreground">
+            <thermal>data_migration_thermal_conf</thermal>
+        </scene>
+    </config>
+    -->
+    <!-- App Boost End -->
+
+    <!-- Game Boost Start -->
+    <config name="game_base" parent="app_base">
+        <scene name="foreground" >
+            <perflock>0x40804000,2764,0x40804100,2035,0x42804000,7</perflock>
+            <!--
+            <thermal>high_thermal_conf</thermal>
+            -->
+        </scene>
+        <scene name="standby" >
+            <perflock>0x40804000,1497,0x40804100,2035,0x40804200,1593,0x42804000,7</perflock>
+            <perflock>0x40000000, 0x0</perflock>
+        </scene>
+    </config>
+    <!--TODO:implement qspm action ?-->
+    <config name="com.ztgame.bob" parent="game_base">
+        <scene name="foreground" >
+            <qspm>0x40804000,1920,0x40804200,1824</qspm>
+        </scene>
+    </config>
+    <config name="com.netease.lztg" parent="game_base">
+        <scene name="foreground" >
+            <perflock>0x40804000,1708,0x40804100,1689,0x40804200,1824</perflock>
+        </scene>
+    </config>
+
+    <config name="super_game_base" parent="game_base">
+        <scene name="foreground">
+            <!--
+            <thermal>super_game_thermal_conf</thermal>
+            -->
+        </scene>
+    </config>
+    <config name="com.protopop.brightridge" parent="super_game_base">
+        <scene name="foreground" >
+            <perflock>0x40800000,1075,0x42804000,6</perflock>
+        </scene>
+    </config>
+    <config name="com.miHoYo.Yuanshen" parent="super_game_base">
+        <scene name="cold_launch" timeout="15000" >
+            <perflock>0x40804100,0xFFFF,0x40800100,0xFFFF,0x40804000,0xFFFF,0x40800000,0xFFFF,0x40804200,0xFFFF,0x40800200,0xFFFF,
+                0x41008000, 0,0x41008200, 0,0x43C00000, 1</perflock>
+        </scene>
+        <scene name="foreground" >
+            <perflock>0x40804000, 2131, 0x40804300, 2131, 0x40804100, 1132, 0x40804200, 1478, 0x40800000, 902,
+                0x40C78000, 5, 0x40C7C000, 5,
+                0x41008000, 0,0x41008200, 0,0x43C00000, 1,
+                0x4144C100, 800000, 0x4144C000, 768000, 0x4144C200 ,0,
+                0x41450100,0, 0x41450000,600, 0x41450200,600,
+                0x40C9C000,4, 0x41444000,0, 0x41444200,0,
+                0x42C08000, 0,0x42804000,5,0x40CE0000, 0x0064005F, 0x40CE0300, 0x0064005F, 0x40CE0200, 0x005A0050,
+                0x43488000,2092000, 0x41844000, 30, 0x4303C000, 90, 0x43400000, 9000, 0x40C80000, 0x0
+            </perflock>
+        </scene>
+    </config>
+    <config name="com.miHoYo.hkrpg" parent="super_game_base">
+        <scene name="cold_launch" timeout="25000" >
+            <perflock>0x40804100,0xFFFF,0x40800100,0xFFFF,0x40804000,0xFFFF,0x40800000,0xFFFF,0x40804200,0xFFFF,0x40800200,0xFFFF,
+                0x41008000, 0,0x41008200, 0,0x43C00000, 1</perflock>
+        </scene>
+        <scene name="foreground">
+            <perflock>0x40804000, 1920, 0x40804300, 1920, 0x40804100, 1132, 0x40804200, 1573,
+                0x40C78000, 5, 0x40C7C000, 5,
+                0x41008000, 0, 0x41008200, 0, 0x43C00000, 1,
+                0x4144C100, 800000, 0x4144C000, 768000, 0x4144C200 ,0,
+                0x41450100,0, 0x41450000,600, 0x41450200,600,
+                0x40C9C000,4, 0x41444000,0, 0x41444200,0,
+                0x42C08000, 0,0x42804000,6,0x40CE0000, 0x0064005F, 0x40CE0300, 0x0064005F, 0x40CE0200, 0x005A0050, 0x40C80000, 0x0
+            </perflock>
+        </scene>
+    </config>
+    <config name="com.netease.onmyoji.mz" parent="game_base">
+        <scene name="foreground">
+            <perflock>0x40804000,1824,0x40804100,1344,0x40804200,1248,0x42804000,10,0x42808000,7</perflock>
+        </scene>
+    </config>
+    <config name="com.netease.onmyoji" parent="game_base">
+        <scene name="foreground">
+            <perflock>0x40804000,1824,0x40804100,1344,0x40804200,1248,0x42804000,10,0x42808000,7</perflock>
+        </scene>
+    </config>
+    <config name="com.riotgames.league.wildrift" parent="game_base">
+        <scene name="foreground">
+            <perflock>0x40804000,1920</perflock>
+        </scene>
+    </config>
+    <config name="com.netease.hyxd" parent="game_base">
+        <scene name="foreground">
+            <perflock>0x40804000,2764,0x40804100,2035,0x40800000,1612,0x40800100,1593,0x42804000,7</perflock>
+        </scene>
+    </config>
+    <config name="com.netease.zjz" parent="game_base">
+        <scene name="foreground">
+            <perflock>0x40804000,1708,0x40804100,2035,0x40804200,1824,0x42804000,10,0x42808000,7</perflock>
+        </scene>
+    </config>
+    <config name="com.wepie.snake" parent="game_base">
+        <scene name="foreground">
+            <perflock>0x40804000,2764,0x40804100,2035,0x40804200,2438,0x40800000,1612,
+                0x40800100,1574,0x42804000,7</perflock>
+        </scene>
+    </config>
+    <config name="weichat_small_game_base" parent="game_base">
+        <scene name="foreground" >
+            <perflock>0x40804000,2764,0x40804100,2035,0x40804200,2438,0x40800000,1612,0x40800100,1574,0x42804000,7</perflock>
+            <refresh_rate>60</refresh_rate>
+        </scene>
+    </config>
+    <config name="tgpa_game_base" parent="game_base">
+        <!--
+        <scene name="tgpa_launching" >
+        </scene>
+        <scene name="tgpa_updating" >
+        </scene>
+        <scene name="tgpa_main_loading" >
+        </scene>
+        <scene name="tgpa_hall" >
+        </scene>
+        <scene name="tgpa_myself_loading" >
+        </scene>
+        <scene name="tgpa_other_loading" >
+        </scene>
+        <scene name="tgpa_playing" >
+        </scene>
+        <scene name="tgpa_watching_after_dead">
+        </scene>
+        <scene name="tgpa_watching" >
+        </scene>
+        -->
+    </config>
+    <config name="com.tencent.af" parent="tgpa_game_base">
+        <scene name="foreground">
+            <perflock>0x40804000,2764,0x40804100,2035,0x40804200,2496,0x42804000,7</perflock>
+        </scene>
+    </config>
+    <config name="com.tencent.tmgp.cf" parent="tgpa_game_base">
+        <scene name="tgpa_main_loading">
+            <perflock>0x40804000,2188,0x40804100,2035,0x40804200,2496</perflock>
+        </scene>
+        <scene name="tgpa_other_loading">
+            <perflock>0x40804000,2188,0x40804100,2035</perflock>
+        </scene>
+        <scene name="tgpa_watching">
+            <perflock>0x40804000,2188,0x40804100,2035</perflock>
+        </scene>
+        <scene name="tgpa_playing">
+            <perflock>0x40804000,2764,0x40804100,2035,0x40804200,2496,0x42804000,10</perflock>
+            <perflock ex_tgpa_model_quality="2">0x40804000,2764,0x40804100,2035,0x40804200,2496,0x40800100,2035,0x42804000,10</perflock>
+            <perflock ex_tgpa_model_quality="4">0x40804000,2764,0x40804100,2035,0x40804200,2496,0x40800000,1401,0x40800100,1574,0x42804000, 10</perflock>
+            <perflock ex_tgpa_model_quality="5">0x40804000,2764,0x40804100,2035,0x40804200,2496,0x40800000,1401,0x40800100,1574,0x42804000,7</perflock>
+            <perflock ex_tgpa_model_quality="6">0x40804000,2764,0x40804100,2035,0x40804200,2496,0x40800000,1401,0x40800100,1574,0x42804000,7</perflock>
+        </scene>
+    </config>
+    <config name="com.tencent.tmgp.dpcq" parent="tgpa_game_base">
+        <scene name="tgpa_main_loading">
+            <perflock>0x40804000,2188,0x40804100,2035,0x40804200,2496</perflock>
+        </scene>
+        <scene name="tgpa_other_loading">
+            <perflock>0x40804000,2188,0x40804100,2035</perflock>
+        </scene>
+        <scene name="tgpa_watching">
+            <perflock>0x40804000,2188,0x40804100,2035</perflock>
+        </scene>
+        <scene name="tgpa_playing">
+            <perflock>0x40804000,2764,0x40804100,2035,0x40804200,2496,0x40800100,2035,0x42804000,7</perflock>
+            <perflock ex_tgpa_model_quality="2">0x40804000,2764,0x40804100,2035,0x40804200,2496,0x40800000,1612,0x40800100,1574,0x42804000,7</perflock>
+        </scene>
+    </config>
+    <config name="com.tencent.tmgp.pubgmhd" parent="tgpa_game_base">
+        <scene name="cold_launch" timeout="20000">
+            <perflock>0x40804100,0xFFFF,0x40800100,0xFFFF,0x40804000,0xFFFF,0x40800000,0xFFFF,0x40804200,0xFFFF,0x40800200,0xFFFF,
+                0x41008000, 0,0x41008200, 0,0x43C00000, 1</perflock>
+        </scene>
+        <scene name="foreground">
+            <perflock>0x42808000,7</perflock>
+            <!--
+            <thermal>tencent_game_thermal_conf</thermal>
+            -->
+        </scene>
+	<scene name="tgpa_hall">
+            <perflock>0x40804000,1286,0x40804300,1286, 0x40804100,902,0x40804200,1132, 0x42808000,7</perflock>
+        </scene>
+	<scene name="tgpa_watching">
+            <perflock>0x40804000,1286,0x40804300,1286, 0x40804100,902,0x40804200,1132, 0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90,120">0x40804000,2035,0x40800000,1190,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1593,0x40800200,1132,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+        </scene>
+        <scene name="tgpa_playing">
+            <perflock>0x40804000,1286,0x40804300,1286, 0x40804100,902,0x40804200,1132, 0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90,120">0x40804000,2035,0x40800000,1190,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1593,0x40800200,1132,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+	</scene>
+	<scene name="tgpa_birth_island">
+            <perflock>0x40804000,1286,0x40804300,1286, 0x40804100,902,0x40804200,1132, 0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90,120">0x40804000,1708,0x40800000,960,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1363,0x40800200,1017,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+		</scene>		
+	<scene name="tgpa_airplane">
+            <perflock>0x40804000,1286,0x40804300,1286, 0x40804100,902,0x40804200,1132, 0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90,120">0x40804000,1708,0x40800000,960,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1363,0x40800200,1017,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+		</scene>
+	<scene name="tgpa_skydiving">
+            <perflock>0x40804000,1286,0x40804300,1286, 0x40804100,902,0x40804200,1132, 0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90,120">0x40804000,2035,0x40800000,1190,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1593,0x40800200,1132,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+		</scene>
+	<scene name="tgpa_landing">
+            <perflock>0x40804000,1286,0x40804300,1286, 0x40804100,902,0x40804200,1132, 0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90,120">0x40804000,2035,0x40800000,1190,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1593,0x40800200,1132,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+        </scene>
+		<scene name="tgpa_final_three_round">
+            <perflock>0x40804000,1286,0x40804300,1286, 0x40804100,902,0x40804200,1132, 0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90">0x40804000,1708,0x40800000,960,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1363,0x40800200,1017,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+			<perflock ex_tgpa_fps="120">0x40804000,1920,0x40800000,960,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1363,0x40800200,1017,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+        </scene>
+		<scene name="tgpa_final_three_round_end">
+            <perflock>0x40804000,1286,0x40804300,1286, 0x40804100,902,0x40804200,1132, 0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90,120">0x40804000,2035,0x40800000,960,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1363,0x40800200,1017,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+        </scene>
+		<scene name="tgpa_final_two_round">
+            <perflock>0x40804000,1286,0x40804300,1286, 0x40804100,902,0x40804200,1132, 0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90">0x40804000,1708,0x40800000,960,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1363,0x40800200,1017,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+			<perflock ex_tgpa_fps="120">0x40804000,1920,0x40800000,960,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1363,0x40800200,1017,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+        </scene>
+		<scene name="tgpa_final_three_two_end">
+            <perflock>0x40804000,1286,0x40804300,1286, 0x40804100,902,0x40804200,1132, 0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90,120">0x40804000,2035,0x40800000,960,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1363,0x40800200,1017,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+        </scene>
+		<scene name="tgpa_final_one_round">
+            <perflock>0x40804000,1286,0x40804300,1286, 0x40804100,902,0x40804200,1132, 0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90">0x40804000,1708,0x40800000,960,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1363,0x40800200,1017,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+			<perflock ex_tgpa_fps="120">0x40804000,1920,0x40800000,960,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1363,0x40800200,1017,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+        </scene>
+		<scene name="tgpa_final_one_round_end">
+            <perflock>0x40804000,1286,0x40804300,1286, 0x40804100,902,0x40804200,1132, 0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90,120">0x40804000,2035,0x40800000,960,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1363,0x40800200,1017,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+
+        </scene>
+		<scene name="tgpa_shoot">
+            <perflock>0x40804000,1286,0x40804300,1286, 0x40804100,902,0x40804200,1132, 0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90,120">0x40804000,2035,0x40800000,1190,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1593,0x40800200,1132,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+        </scene>
+		<scene name="tgpa_drive">
+            <perflock>0x40804000,1286,0x40804300,1286, 0x40804100,902,0x40804200,1132, 0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90">0x40804000,1708,0x40800000,960,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1363,0x40800200,1017,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+			<perflock ex_tgpa_fps="120">0x40804000,1920,0x40800000,960,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1363,0x40800200,1017,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+        </scene>
+		<scene name="tgpa_drive_end">
+            <perflock>0x40804000,1286,0x40804300,1286, 0x40804100,902,0x40804200,1132, 0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90,120">0x40804000,2035,0x40800000,1190,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1593,0x40800200,1132,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+        </scene>
+		<scene name="tgpa_swim">
+            <perflock>0x40804000,1286,0x40804300,1286, 0x40804100,902,0x40804200,1132, 0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90,120">0x40804000,1708,0x40800000,960,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1363,0x40800200,1017,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+        </scene>
+		<scene name="tgpa_swim_end">
+            <perflock>0x40804000,1286,0x40804300,1286, 0x40804100,902,0x40804200,1132, 0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90,120">0x40804000,2035,0x40800000,1190,0x40804300,1190, 0x40800300, 960, 0x40804100,902,0x40804200,1593,0x40800200,1132,0x42808000,7,
+			0x40C9C000,4, 0x41444000,0, 0x41444100,0, 0x40C78000, 5, 0x40C7C000, 5, 0x43C00000, 1,0x40C9C000,4</perflock>
+        </scene>
+    </config>
+    <config name="com.tencent.tmgp.sgame" parent="tgpa_game_base">
+        <scene name="cold_launch" timeout="20000">
+            <perflock>0x40804100,0xFFFF,0x40800100,0xFFFF,0x40804000,0xFFFF,0x40800000,0xFFFF,0x40804200,0xFFFF,0x40800200,0xFFFF,
+                0x41008000, 0,0x41008200, 0,0x43C00000, 1</perflock>
+        </scene>
+        <scene name="foreground">
+            <perflock >0x42808000,7</perflock>
+            <!--
+            <thermal>tencent_game_thermal_conf</thermal>
+            -->
+        </scene>
+        <scene name="tgpa_launching" >
+            <perflock>0x40804100,0xFFFF,0x40800100,0xFFFF,0x40804000,0xFFFF,0x40800000,0xFFFF,0x40800200,0xFFFF,0x40c00000,1,0x42C10000,1</perflock>
+        </scene>
+        <scene name="tgpa_main_loading" >
+            <perflock>0x40804000,1497,0x40804100,1017,0x40804200,1132,0x42804000,10,0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90,120">0x40804000,1824,0x40804300,1824,0x40804100,1132,0x40804200,1478,0x42808000,8,0x40CE0000, 0x0014000A, 0x40CE0300, 0x0014000A, 0x40CE0200, 0x005A0050, 0x40CBC000, 1</perflock>
+        </scene>
+        <scene name="tgpa_hall" >
+            <perflock>0x40804000,1497,0x40804100,1017,0x40804200,1132,0x42804000,10,0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90,120">0x40804000,1824,0x40804300,1824,0x40804100,1132,0x40804200,1478,0x42808000,8,0x40CE0000, 0x0014000A, 0x40CE0300, 0x0014000A, 0x40CE0200, 0x005A0050, 0x40CBC000, 1</perflock>
+        </scene>
+        <scene name="tgpa_myself_loading" >
+            <perflock>0x40804100,0xFFFF,0x40800100,0xFFFF,0x40804000,0xFFFF,0x40800000,0xFFFF,0x40800200,0xFFFF,0x40c00000,1,0x42C10000,1</perflock>
+        </scene>
+        <scene name="tgpa_other_loading" >
+            <perflock>0x40804100,0xFFFF,0x40800100,0xFFFF,0x40804000,0xFFFF,0x40800000,0xFFFF,0x40800200,0xFFFF,0x40c00000,1,0x42C10000,1</perflock>
+        </scene>
+        <scene name="tgpa_playing" >
+            <perflock>0x40804000,1497,0x40804100,1017,0x40804200,1132,0x42804000,10,0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90,120">0x40804000,1824,0x40804300,1824,0x40804100,1132,0x40804200,1478,0x42808000,8,0x40CE0000, 0x0014000A, 0x40CE0300, 0x0014000A, 0x40CE0200, 0x005A0050, 0x40CBC000, 1</perflock>
+            <perflock ex_tgpa_fps="90,120" ex_tgpa_hero_count="6-20">0x40804000,2188,0x40804100,2035,0x40804200,2496,0x42804000,10,0x42808000,7</perflock>
+        </scene>
+        <scene name="tgpa_watching_after_dead">
+            <perflock>0x40804000,1497,0x40804100,1017,0x40804200,1132,0x42804000,10,0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90,120">0x40804000,1824,0x40804300,1824,0x40804100,1132,0x40804200,1478,0x42808000,8,0x40CE0000, 0x0014000A, 0x40CE0300, 0x0014000A, 0x40CE0200, 0x005A0050, 0x40CBC000, 1</perflock>
+        </scene>
+        <scene name="tgpa_watching" >
+            <perflock>0x40804000,1497,0x40804100,1017,0x40804200,1132,0x42804000,10,0x42808000,7</perflock>
+            <perflock ex_tgpa_fps="90,120">0x40804000,1824,0x40804300,1824,0x40804100,1132,0x40804200,1478,0x42808000,8,0x40CE0000, 0x0014000A, 0x40CE0300, 0x0014000A, 0x40CE0200, 0x005A0050, 0x40CBC000, 1</perflock>
+	    <perflock ex_tgpa_fps="90,120" ex_tgpa_hero_count="6-20">0x40804000,2188,0x40804100,2035,0x40804200,2496,0x42804000,10,0x42808000,7</perflock>
+        </scene>
+    </config>
+    <!--TODO:check tgpa_playing working correct-->
+    <config name="com.tencent.tmgp.speedmobile" parent="tgpa_game_base">
+        <scene name="tgpa_main_loading">
+            <perflock>0x40804000,2188,0x40804100,2035,0x40804200,2496</perflock>
+        </scene>
+        <scene name="tgpa_other_loading">
+            <perflock>0x40804000,2188,0x40804100,2035</perflock>
+        </scene>
+        <scene name="tgpa_playing">
+            <perflock>0x40804000,2764,0x40804100,2035,0x40804200,2496,0x42804000,7</perflock>
+            <perflock ex_tgpa_fps="90,120">0x40804000,2764,0x40804100,2035,0x40804200,2496,0x40800000,1401,0x40800100,1574,0x42804000,7</perflock>
+        </scene>
+    </config>
+
+    <config name="com.tencent.YiRen" parent="tgpa_game_base">
+        <scene name="foreground">
+            <perflock>0x40804000,2764,0x40804100,2035,0x40804200,2496,0x42804000,7</perflock>
+        </scene>
+    </config>
+    <config name="com.tencent.xjcard" parent="tgpa_game_base"/>
+    <config name="com.tencent.tmgp.cod" parent="tgpa_game_base"/>
+    <!-- Game Boost End -->
+
+    <!-- BenchMark Boost start -->
+    <config name="benchmark_base" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40CAC000,20,0x40CA4000,2,0x42C1C000,1,0x40CFC000,0,
+                0x40804000,2841,0x40804100,2035,0x40800000,2841,0x40800100,2035,0x40800200,2995,
+                0x42804000,0,0x40C00000,0x1,0x42C10000,0x1,0x41800000,0x50,0x43000000,0x19,0x43400000,0x3480</perflock>
+            <!--
+            <thermal>benchmark_thermal_conf</thermal>
+            -->
+        </scene>
+    </config>
+    <config name="com.antutu.ABenchMark" parent="benchmark_base">
+        <scene name="foreground">
+            <perflock>0x40804000,2841,0x40804100,2035,0x40800000,2841,
+                0x40800100,2035,0x40800200,2995,0x42804000,0,0x40C00000,0x2,0x42C10000, 0x1,0x41800000,
+                0x50,0x43000000,0x19,0x43400000,0x3480,0x40CE0000, 0x0014000A, 0x40CE0200, 0x0014000A</perflock>
+            <refresh_rate activity="com.android.module.app.ui.test.activity.ActivityScoreBench">60</refresh_rate>
+            <refresh_rate activity="com.module.benchmark.platform.imageprocess.opengles.GLFisheyeAndBlurActivity">120</refresh_rate>
+            <refresh_rate activity="com.module.benchmark.platform.imageprocess.vulkan.VkFisheyeAndBlurActivity">120</refresh_rate>
+            <refresh_rate activity="com.module.benchmark.platform.imageprocess.vulkan.VkHalfFisheyeAndBlurActivity">120</refresh_rate>
+            <refresh_rate activity="com.qq.e.ads.RewardvideoPortraitADActivity">120</refresh_rate>
+            <refresh_rate activity="com.qq.e.ads.RewardvideoLandscapeADActivity">120</refresh_rate>
+            <refresh_rate activity="com.kwad.sdk.api.proxy.app.KsFullScreenVideoActivity">120</refresh_rate>
+            <refresh_rate activity="com.kwad.sdk.api.proxy.app.KsFullScreenLandScapeVideoActivity">120</refresh_rate>
+            <refresh_rate activity="com.kwad.sdk.api.proxy.app.KsRewardVideoActivity">120</refresh_rate>
+            <refresh_rate activity="com.kwad.sdk.api.proxy.app.KSRewardLandScapeVideoActivity">120</refresh_rate>
+            <refresh_rate activity="com.kwad.sdk.api.proxy.app.BaseFragmentActivity.ProfileVideoDetailActivity">120</refresh_rate>
+        </scene>
+    </config>
+    <config name="com.antutu.benchmark.full" parent="benchmark_base">
+        <scene name="foreground">
+            <perflock>0x40804000,2841,0x40804100,2035,0x40800000,2841,
+                0x40800100,2035,0x40800200,2995,0x42804000,0,0x40C00000,0x2,0x42C10000, 0x1,0x41800000,
+                0x50,0x43000000,0x19,0x43400000,0x3480</perflock>
+            <refresh_rate>60</refresh_rate>
+            <refresh_rate activity="com.epicgames.ue4.GameActivity">120</refresh_rate>
+            <refresh_rate activity="com.android.module.graphics.video.VideoCTSTestActivity">120</refresh_rate>
+            <refresh_rate activity="com.android.module.graphics.video.VideoDecodeTestActivity">120</refresh_rate>
+            <refresh_rate activity="com.android.module.graphics.video.VideoEditingActivity">120</refresh_rate>
+        </scene>
+    </config>
+    <config name="com.ludashi.benchmark" parent="benchmark_base">
+        <scene name="foreground">
+            <refresh_rate>120</refresh_rate>
+        </scene>
+    </config>
+    <config name="com.ludashi.benchmark2" parent="benchmark_base">
+        <scene name="foreground">
+            <refresh_rate>120</refresh_rate>
+        </scene>
+    </config>
+    <config name="com.ludashi.vrbench" parent="benchmark_base">
+        <scene name="foreground">
+            <refresh_rate>120</refresh_rate>
+        </scene>
+    </config>
+
+    <config name="CTRA" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40804000,499,0x40804100,364,0x40804300,499,0x40804200,480,0x42804000,8</perflock>
+        </scene>
+    </config>
+
+    <config name="tencent_wechat_level_1" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40800000, 1920, 0x42C10000, 0x1</perflock>
+        </scene>
+    </config>
+
+    <config name="tencent_wechat_level_2" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40800000, 1920, 0x42C10000, 0x1</perflock>
+        </scene>
+    </config>
+
+    <config name="tencent_wechat_level_3" parent="app_base">
+        <scene name="foreground">
+            <perflock>0x40800000, 1920, 0x42C10000, 0x1</perflock>
+        </scene>
+    </config>
+    <!-- BenchMark Boost end -->
+
+    <!-- System base start -->
+    <config name="system_base">
+        <!--
+        <scene name="power_normal">
+            <thermal>mid_thermal_conf</thermal>
+        </scene>
+        <scene name="power_batterySave">
+            <thermal>low_thermal_conf</thermal>
+        </scene>
+        -->
+        <scene name="meeting">
+            <refresh_rate>60</refresh_rate>
+        </scene>
+        <scene name="navi">
+            <refresh_rate>60</refresh_rate>
+        </scene>
+        <!--
+        <scene name="calling">
+            <thermal>call_thermal_conf</thermal>
+        </scene>
+        <scene name="camera">
+            <thermal>camera_thermal_conf</thermal>
+        </scene>
+        <scene name="hotspot">
+            <thermal>hotspot_thermal_conf</thermal>
+        </scene>
+        <scene name="vpn">
+            <thermal>vpn_thermal_conf</thermal>
+        </scene>
+        <scene name="monkey">
+            <thermal>monkey_thermal_conf</thermal>
+        </scene>
+        <scene name="fast_startup">
+            <thermal>fast_startup_thermal_conf</thermal>
+        </scene>
+        <scene name="video">
+            <thermal>video_thermal_conf</thermal>
+        </scene>
+        <scene name="audio">
+            <thermal>audio_thermal_conf</thermal>
+        </scene>
+        <scene name="screen_off">
+            <thermal>screen_off_thermal_conf</thermal>
+        </scene>
+        -->
+    </config>
+    <!-- System base end -->
+
+    <!-- interaction bae start -->
+    <config name="interaction_base">
+    </config>
+    <config name="surfaceflinger" parent="interaction_base">
+        <scene name="expensive_rendering">
+            <perflock ex_boost_level="heavy_blur">0x42804000,0x4,0x40C00000,0x2,0x40800000,270,0x40804000,0xFFF</perflock>
+        </scene>
+    </config>
+    <!-- interaction base end -->
+</configs>

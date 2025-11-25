@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packages>
+    <package name="com.meizu.alphame" switchable="true"/>
+    <package name="com.meizu.pps" switchable="true" force-enable="true"/>
+    <package name="com.meizu.dataservice" switchable="true"/>
+    <package name="com.android.providers.calendar" switchable="true"/>
+    <package name="com.upuphone.starrynet" switchable="true"/>
+    <package name="com.meizu.netcontactservice" switchable="true"/>
+    <package name="com.meizu.flyme.service.find" switchable="true"/>
+    <package name="com.flyme.ability" switchable="true"/>
+    <package name="com.qualcomm.qti.workloadclassifier" switchable="true"/>
+    <package name="com.meizu.cloud"/>
+    <package name="com.flyme.mobileservice"/>
+    <package name="com.qti.qcc"/>
+    <package name="com.meizu.safe"/>
+    <package name="com.flyme.dck.service"/>
+    <package name="com.upuphone.easyshare"/>
+    <package name="com.meizu.regservice"/>
+    <package name="com.android.rkpdapp"/>
+    <package name="com.qualcomm.qti.cne"/>
+</packages>
